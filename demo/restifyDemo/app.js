@@ -5,7 +5,7 @@
  * Created by Administrator on 2014/11/3.
  */
 var restify=require('restify');//restful
-var bunyan=require('bynyan');//log
+
 var server=restify.createServer(
 //    {
 //        name: 'myapp',
