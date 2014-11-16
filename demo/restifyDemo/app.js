@@ -19,6 +19,10 @@ server.get('/controller/:name', function (req, res, next) {
     res.send(req.params);
 //    return next();
 });
+server.get('/controller/:name/:value', function (req, res, next) {
+    res.send(req.params);
+//    return next();
+});
 server.listen(1111,function(){
     console.log('%s listening at %s', server.name, server.url);
 });
