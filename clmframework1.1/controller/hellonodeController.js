@@ -1,18 +1,19 @@
 /**
  * Created by Administrator on 2014/11/12.
  */
-exports.getHellonode= function(req,res){
+exports.getHellonode= function(a,b,c){
+    console.log('getHellonode');
+    console.log('a=%s,b=%s,c=%s',a,b,c);
+};
+
+exports.postHellonode=function(a,b,c){
 
 };
 
-exports.postHellonode=function(req,res){
+exports.putHellonode=function(a,b,c){
 
 };
 
-exports.putHellonode=function(req,res){
-
-};
-
-exports.deleteHellonode=function(req,res){
+exports.delHellonode=function(a,b,c){
 
 };
