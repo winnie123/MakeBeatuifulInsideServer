@@ -5,7 +5,7 @@
  * Created by Administrator on 2014/11/3.
  */
 var restify=require('restify');//restful
-var bunyan=require('bynyan');//log
+
 var server=restify.createServer(
 //    {
 //        name: 'myapp',
@@ -16,6 +16,10 @@ var server=restify.createServer(
 //server.use(restify.queryParser());
 //server.use(restify.bodyParser());
 server.get('/controller/:name', function (req, res, next) {
+    res.send(req.params);
+//    return next();
+});
+server.get('/controller/:name/:value', function (req, res, next) {
     res.send(req.params);
 //    return next();
 });
